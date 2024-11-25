@@ -1,11 +1,11 @@
-/* Resetando margens e preenchimento */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo do corpo */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* Cabeçalho */
+
 header {
     background-color: #ef85f8;
     color: white;
@@ -58,7 +58,7 @@ nav ul li a:hover {
     color: #ef85f8;
 }
 
-/* Estilo das Seções */
+
 section {
     padding: 60px 20px;
 }
@@ -74,7 +74,7 @@ section p {
     color: #666;
 }
 
-/* Galeria de Imagens */
+
 .image-gallery {
     display: flex;
     justify-content: center;
@@ -82,14 +82,14 @@ section p {
 }
 
 .image-gallery .photo {
-    width: 300px;  /* Aumentando o tamanho das imagens */
+    width: 300px;  
     height: auto;
     margin: 0 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Rodapé */
+
 footer {
     background-color: #333;
     color: white;
@@ -101,7 +101,7 @@ footer p {
     font-size: 1.1em;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5em;
@@ -129,7 +129,7 @@ footer p {
     }
 
     .image-gallery .photo {
-        width: 80%; /* Ajustando para telas menores */
+        width: 80%; 
         margin-bottom: 20px;
     }
 }
