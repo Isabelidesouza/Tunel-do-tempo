@@ -82,7 +82,7 @@ section p {
 }
 
 .image-gallery .photo {
-    width: 200px;
+    width: 300px;  /* Aumentando o tamanho das imagens */
     height: auto;
     margin: 0 15px;
     border-radius: 8px;
@@ -129,7 +129,7 @@ footer p {
     }
 
     .image-gallery .photo {
-        width: 90%;
+        width: 80%; /* Ajustando para telas menores */
         margin-bottom: 20px;
     }
 }
