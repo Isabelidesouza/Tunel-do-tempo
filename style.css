@@ -8,10 +8,9 @@
 /* Estilo do corpo */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
 /* Cabeçalho */
@@ -19,54 +18,73 @@ header {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 80px 20px;
-    position: relative;
-    z-index: 10;
+    padding: 50px 20px;
 }
 
-header .header-content h1 {
-    font-size: 3.5em;
+header h1 {
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
-header .header-content p {
+header p {
     font-size: 1.5em;
     font-weight: 300;
 }
 
-/* Seções principais */
-.section {
-    padding: 100px 20px;
-    background-color: #fff;
-    margin-bottom: 50px;
-    transition: background-color 0.5s ease;
+/* Menu de Navegação */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
 }
 
-.section:nth-child(even) {
-    background-color: #e9f7e1;
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
-.content h2 {
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Estilo das Seções */
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
     font-size: 2.5em;
-    color: #333;
+    color: #4CAF50;
     margin-bottom: 20px;
 }
 
-.content p {
+section p {
     font-size: 1.3em;
     color: #666;
 }
 
-/* Estilo para a Galeria de Imagens */
+/* Galeria de Imagens */
 .image-gallery {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .image-gallery .photo {
-    width: 120px;
+    width: 200px;
     height: auto;
+    margin: 0 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -76,24 +94,42 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 30px 20px;
-    position: relative;
-    z-index: 10;
+    padding: 20px 0;
 }
 
 footer p {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
-/* Animação de Scroll */
-.section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s, transform 0.6s;
-}
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
 
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+    header p {
+        font-size: 1.2em;
+    }
 
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+    }
+
+    .image-gallery .photo {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
